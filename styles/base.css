@@ -52,14 +52,12 @@ nav a:visited {
   flex: 1 1 100%;
   display: block;
   font-size: 1rem;
-  text-align: center;
   padding: 0.5rem;
   color: #fff;
   text-decoration: none;
 }
 
 nav a:hover {
-  color: #fff;
   background-color: var(--orange);
   font-weight: 600;
 }
@@ -74,8 +72,6 @@ main {
 }
 
 footer {
-  font-size: 0.9rem;
-  padding: 1rem;
   background-color: var(--green);
   color: #fff;
 }

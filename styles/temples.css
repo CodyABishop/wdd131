@@ -1,0 +1,131 @@
+:root {
+    --green: rgb(29, 114, 47);
+    --orange: rgba(230, 111, 32);
+  }
+  
+  * {
+    margin: 0;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+  }
+  
+  header {
+    background-color: var(--green);
+    display: flex;
+    color: white;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+  h1 {
+    padding: 1.5rem;
+  }
+  
+  #hambutton {
+    background-color: var(--green);
+    display: block;
+    color: white;
+    font-size: 2.5rem;
+    text-decoration: none;
+    border: none;
+    padding: 0 .5rem;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 1rem;
+  }
+  
+  #hambutton::before {
+    content: "≡";
+  }
+  
+  #hambutton.show::before {
+    content: "X";
+  }
+  
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  nav a {
+    display: none;
+    color: white;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    font-size: 2rem;
+  }
+  
+  nav a:hover,
+  nav a:active {
+    color: var(--orange);
+    font-weight: 700;
+  }
+  
+  nav a:hover~#navmenu~#hambutton {
+    background-color: var(---orange);
+    color: rgb(0, 0, 0);
+  }
+  
+  nav.show {
+    width: 100%;
+  }
+  
+  h1.show {
+    display: none;
+  }
+  
+  .show a {
+    display: block;
+    text-align: center;
+  }
+  
+  main {
+    max-width: 850px;
+    margin: 1.5rem auto;
+    padding: 1rem;
+  }
+  
+  main img {
+    width: 100%;
+    height: auto;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .res-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1rem;
+  }
+  
+  figure {
+    margin-bottom: 1rem;
+  }
+  
+  figcaption {
+    text-align: center;
+    color: var(--green);
+  }
+  
+  footer {
+    background-color: var(--green);
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .smaller {
+    font-size: smaller;
+  }

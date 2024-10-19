@@ -19,16 +19,16 @@
   footer {
     color: white;
     text-align: center;
-    padding: 1.5rem;
+    padding: 1.25rem;
   }
   
   h1 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
   
   aside {
     background-color: var(--purple);
-    padding: .5rem;
+    padding: .75rem;
   }
   
   img {
@@ -121,7 +121,7 @@
     }
   
     .weather h2::after {
-      content: "⛅";
+      content: "☁️";
       position: absolute;
       right: 3rem;
       top: 1.25rem;

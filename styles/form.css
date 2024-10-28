@@ -1,6 +1,6 @@
 :root {
-    --back1: rgba(44, 4, 44, 1);
-    --back2: rgba(44, 4, 44, .2);
+  --green: rgb(29, 114, 47);
+  --orange: rgba(230, 111, 32);
     --border: rgba(0, 0, 0, .1);
   }
   
@@ -18,7 +18,7 @@
   header,
   footer {
     color: white;
-    background-color: var(--back1);
+    background-color: var(--green);
     text-align: center;
     padding: 1rem;
   }
@@ -36,7 +36,7 @@
     margin: 1rem auto;
     border: 1px solid var(--border);
     padding: 1rem;
-    background-color: var(--back2);
+    background-color: var(--orange);
     border-radius: 5px;
     max-width: 500px;
   }
